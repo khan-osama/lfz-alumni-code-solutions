@@ -1,0 +1,10 @@
+body {
+  line-height: 3rem;
+}
+h1, p {
+  font-family: 'Playfair Display', serif;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+}
