@@ -1,0 +1,209 @@
+.header-row {
+  border-bottom: 2px solid rgb(231, 231, 231);
+}
+
+.header-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.logo > img {
+  margin-left: 60px;
+}
+.nav-links {
+  margin-right: 63px;
+}
+a, #contact {
+  margin-left: 80px;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.nav-links > a {
+  color: rgb(168, 167, 167);
+}
+
+#contact {
+  padding: 25px 35px;
+  color: white;
+  background-color: rgb(46, 36, 88);
+  border-radius: 6px;
+  border: none;
+  font-size: 2rem;
+}
+
+#contact:hover {
+  cursor: pointer;
+  background-color: rgb(12, 0, 63);
+}
+
+.background-image-box {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/hero.jpg');
+  background-size: cover;
+  padding: 160px;
+  margin: 90px 103px;
+  position: relative;
+  text-align: left;
+}
+
+.text-header {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  font-size: 5rem;
+
+}
+
+.text, .address {
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  color: white;
+  padding-top: 15px;
+  flex-basis: content;
+  line-height: 48px;
+}
+
+.gbutton {
+  background-color: rgb(23, 62, 100);
+  color: white;
+  padding: 40px 100px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 50px;
+  font-size: 42px;
+}
+
+.canvas-address-container {
+  background-color: rgb(240, 240, 240);
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  color: rgb(148, 148, 148);
+  padding-bottom: 6rem;
+}
+
+.address-header-row {
+  display: flex;
+  justify-content: center;
+}
+
+.address-header-column-full {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.locations-header, .learn-more-text > h2 {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  color: rgb(114, 114, 114);
+}
+
+.location-sub-head {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.address-column-half {
+  width: 50%;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 100px;
+  margin-top: 5rem;
+}
+
+.learn-more-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+}
+
+.learn-more-text {
+  display: flex;
+  flex-direction: column;
+  margin: auto 60px;
+  line-height: 1rem;
+}
+
+.learn-more-text > p {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  color: rgb(114, 114, 114);
+  font-size: 1.5rem;
+}
+
+#learn-gbutton {
+  margin-top: 16px;
+  margin-right: 63px;
+}
+
+.company-more-info-container {
+  background-color: rgb(59, 59, 59);
+  height: 600px;
+}
+
+.more-info-row {
+  display: flex;
+  height: 80%;
+  align-items: center;
+}
+
+.more-info-column-one-half {
+  margin-left: 195px;
+  margin-top: 193px;
+}
+
+.more-info-column-one-fourth, .more-info-column-one-fourth-2 {
+  list-style: none;
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  color: white;
+  margin-left: 800px;
+  margin-top: 40px;
+}
+
+.more-info-column-one-fourth-2 {
+  margin-left: 300px;
+  margin-top: 160px;
+}
+
+.nav-links-list {
+  padding: 0px;
+  line-height: 4rem;
+}
+
+.footer-links {
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(117, 117, 117);
+  display: flex;
+  margin: 110px;
+}
+
+.footer-row {
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.footer-links > li {
+  padding-left: 40px;
+}
