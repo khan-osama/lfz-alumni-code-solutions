@@ -43,6 +43,7 @@ del {
   background-color: rgb(253, 235, 185);
 }
 
-#lv-bag-img {
+.prod-img {
   height: 690px;
+  object-fit: cover;
 }
