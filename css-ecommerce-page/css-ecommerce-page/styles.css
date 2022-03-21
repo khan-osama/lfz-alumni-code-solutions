@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+}
+
+.header-row {
+  display: flex;
+  justify-content: center;
+}
+
+.header-column {
+  margin-top: 40px;
+}
+.ecommerce-row {
+  display: flex;
+  margin: 20px 5%;
+}
+
+.ecommerce-column-one-fifth {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.item-info {
+  margin-top: 20px;
+  line-height: 2.5rem;
+}
+
+.size-info, del {
+  color: rgb(204, 204, 204);
+}
+
+del {
+  padding-left: 5px;
+}
+
+.cost {
+  background-color: rgb(253, 235, 185);
+}
+
+.prod-img {
+  height: 690px;
+  object-fit: cover;
+}
