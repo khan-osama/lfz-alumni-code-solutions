@@ -61,8 +61,7 @@ function cardGame() {
   var playerScoreArr = [];
   var i = 0;
   while (i < 4) {
-    var j = 0;
-    var playerScore = players[i].hand[j].rank + players[i].hand[j + 1].rank;
+    var playerScore = players[i].hand[0].rank + players[i].hand[1].rank;
     playerScoreArr.push(playerScore);
     i++;
   }
