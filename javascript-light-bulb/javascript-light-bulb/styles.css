@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.lightbulb-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(0, 0, 0) ;
+}
+
+.lightbulb-column {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.lightbulb {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border-style: none;
+  background-color: rgb(70, 70, 70);
+}
+
+.lightbulb.on {
+  background-color: rgb(255, 255, 106);
+}
+
+.lightbulb-container.on {
+  background-color: rgb(255, 240, 221);
+}
