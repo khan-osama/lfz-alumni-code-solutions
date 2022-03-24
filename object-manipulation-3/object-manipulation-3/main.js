@@ -38,11 +38,13 @@ function cardGame() {
     }
   }
 
-  //Shuffle deck & deal
+  //Shuffle deck & deal & remove cards from deck
+  var shuffleDeck = _.shuffle(cardsDeck);
+
   for (var i = 0; i < 4; i++) {
     for (var j = 0; j < 2; j++) {
-      var shuffleDeck = _.shuffle(cardsDeck);
       players[i].hand.push(shuffleDeck[j]);
+      shuffleDeck.splice(j, 1);
     }
   }
 
