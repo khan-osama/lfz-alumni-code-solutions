@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-container {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+}
+
+.img-select {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bigger-icons {
+  font-size: 24px;
+}
+
+.icon-style {
+  padding: 3px;
+}
+
+.bigger-icons,
+.icon-style {
+  cursor: pointer;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
