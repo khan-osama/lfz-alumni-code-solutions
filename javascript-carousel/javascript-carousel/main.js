@@ -3,11 +3,11 @@ var imgIndex = 0;
 var $chevronLeft = document.querySelector('.fa-chevron-left');
 var $chevronRight = document.querySelector('.fa-chevron-right');
 
-window.addEventListener('DOMContentLoaded', createDots());
+window.addEventListener('DOMContentLoaded', createDots);
 
 function createDots() {
   var divDots = document.querySelector('.img-select-dots');
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < imagesArray.length; i++) {
     var dotElement = document.createElement('i');
     dotElement.className = 'fa-regular fa-circle icon-style';
     divDots.appendChild(dotElement);
@@ -21,7 +21,7 @@ function createDots() {
 
 $chevronLeft.addEventListener('click', function () {
   if (imgIndex === 0) {
-    imgIndex = 4;
+    imgIndex = imagesArray.length - 1;
   } else {
     imgIndex--;
   }
@@ -30,7 +30,7 @@ $chevronLeft.addEventListener('click', function () {
 })
 
 $chevronRight.addEventListener('click', function () {
-  if (imgIndex === 4) {
+  if (imgIndex === imagesArray.length - 1) {
     imgIndex = 0;
   } else {
     imgIndex++;
@@ -55,7 +55,7 @@ function changeImg() {
 }
 
 var handle = setInterval(function() {
-  if (imgIndex === 4) {
+  if (imgIndex === imagesArray.length - 1) {
     imgIndex = 0;
   } else {
     imgIndex++;
