@@ -1,3 +1,1 @@
-let divide = (x, y) => x / y;
-
-module.exports = divide;
+exports.divide = (x, y) => x / y;

@@ -1,3 +1,1 @@
-let multiply = (x, y) => x * y;
-
-module.exports = multiply;
+exports.multiply = (x, y) => x * y;
