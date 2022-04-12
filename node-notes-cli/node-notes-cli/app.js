@@ -3,13 +3,9 @@ const data = require('./data.json');
 const userInput = process.argv[2];
 
 if (userInput === 'read') {
-  fs.readFile('data.json', 'utf8', (err, data) => {
-    if (err) throw err;
-    data = JSON.parse(data);
-    for (const property in data.notes) {
-      console.log(`${property}: ${data.notes[property]}`);
-    }
-  })
+  for (const property in data.notes) {
+    console.log(`${property}: ${data.notes[property]}`);
+  }
 }
 
 if (userInput === 'create') {
