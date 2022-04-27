@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  padding: 10px 30px;
+}
+
+.coldest, .cold, .warm {
+  color: white;
+  background-color: rgb(55, 3, 104);
+}
+
+.cold {
+  background-color: rgb(114, 27, 196);
+}
+
+.warm {
+  background-color: rgb(255, 52, 52);
+}
+
+.warmer {
+  background-color: rgb(240, 163, 21);
+}
+
+.hot {
+  background-color: rgb(238, 255, 2);
+}
+
+.blazing {
+  background-color: rgb(255, 255, 255);
+}
