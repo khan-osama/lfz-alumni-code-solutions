@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.stopwatch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.icon {
+  padding-top: 30px;
+}
+
+ span {
+   font-size: 3rem;
+   font-weight: bold;
+ }
