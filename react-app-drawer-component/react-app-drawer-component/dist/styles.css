@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 2rem;
+  margin: 10px;
+  padding: 10px;
+}
+
+.drawer-container {
+  height: 100vh;
+  width: 10%;
+  border-style: solid;
+  border-width: 3px;
+  position: absolute;
+}
+
+.row-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+  padding-left: 20px;
+}
+
+.header {
+  margin: 10px;
+  padding: 10px;
+}
+
+p, .fa-bars {
+  cursor: pointer;
+  width: max-content;
+}
+
+.overlay {
+  background-color: #575757;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 10%;
+  right: 0;
+  opacity: 0.8;
+}
