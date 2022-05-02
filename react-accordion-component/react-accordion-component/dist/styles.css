@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.data {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 800px;
+  height: 800px;
+}
+
+.header {
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+h1 {
+  background-color: rgb(165, 165, 165);
+}
+
+h1, p {
+  padding: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.content-show {
+  width: 100%;
+  height: 100%;
+}
