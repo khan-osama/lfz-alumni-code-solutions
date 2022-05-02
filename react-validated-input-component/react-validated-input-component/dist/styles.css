@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+input {
+  border-width: 3px;
+}
+
+p {
+  color: red;
+  margin-top: 5px;
+}
+
+.fa-solid {
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+.fa-xmark {
+  color: red;
+}
+
+.fa-check {
+  color: green
+}
