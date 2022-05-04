@@ -78,9 +78,9 @@ export default class App extends React.Component {
      * And specify the "Content-Type" header as "application/json"
      */
     const { todos } = this.state
-    todos.map((obj, index) => {
-      if (todoId === obj.todoId) {
-        let objStatus = obj.isCompleted
+    for (const element of todos) {
+      if (todoId === element.todoId) {
+        let objStatus = element.isCompleted
         let completeObj = {
           isCompleted: !objStatus
         }
@@ -99,13 +99,13 @@ export default class App extends React.Component {
           })
           .then(updatedTodo => {
             const updatedState = todos.slice()
-            updatedState[todoId - 1] = updatedTodo
+            updatedState[todos.indexOf(element)] = updatedTodo
             this.setState({
               todos: updatedState
             })
           })
       }
-    })
+    }
   }
 
   render() {
