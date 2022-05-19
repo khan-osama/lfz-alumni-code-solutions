@@ -1,0 +1,21 @@
+User can sign up:
+If the user is signing up then the App.jsx will check to see to make sure that the user is requesting to sign in and render auth.jsx. Auth and auth-form are being rendered when the user is trying to sign
+up. The user clicks Register and the auth-form is re-rendered with the modal to allow the user to sign-up. HandleChange captures the user data while the handleSubmit method will send that data
+using a POST request to the server. If both pieces of data are valid, the server will hash the password using the argon2 algorithm and send a query to the database. Once the query is successful
+the user information will be stored and the user sign up will be complete and recorded.
+
+User can sign in:
+
+Auth and auth-form are rendered initially again. The auth-form will use the handleChange method to capture the user data and once the user clicks submit, the handleSubmit method will send a
+request to the server as a POST request. If the user exists, then the server will check the hashedpassword in the database to match with the user password. If this clears, a token will be
+sent back to authenticate the user and let them sign in. After the user is authenticated, app.jsx will render the home.jsx page.
+
+User can stay signed in:
+
+App.jsx saves the auth token to localStorage after the user is signed in successfully by using the decode-token.js file. If the user clicks refresh, localstorage is checked from the componentdidmount method to see
+if a token exists. Once that is verified then the appropriate page for the authorized user is rendered again.
+
+User can sign out:
+
+User can click on the sign out button which is rendered by navbar.jsx. This component contains a context for handleSignOut which will remove the auth token
+from localStorage and change the state of user to null. Then, the auth-form and the auth page are rendered by app.jsx prompting them to sign in/sign up.
