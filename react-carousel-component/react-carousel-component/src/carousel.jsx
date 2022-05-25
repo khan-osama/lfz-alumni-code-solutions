@@ -1,32 +1,10 @@
 import React from 'react'
 
-const carouselImages = [
-  {
-    imageURL: 'https://spng.pngfind.com/pngs/s/580-5806796_tf2-soldier-tf2soldier-tf2comics-soldier-tf2-hd-png.png'
-  },
-
-  {
-    imageURL: 'https://spng.pngfind.com/pngs/s/288-2888435_team-fortress-2-beta-mod-cross-hd-png.png'
-  },
-
-  {
-    imageURL: 'https://spng.pngfind.com/pngs/s/677-6771515_sniper-and-spy-tf2-hd-png-download.png'
-  },
-
-  {
-    imageURL: 'https://cdn.quotesgram.com/img/44/58/773406058-2327037-heavy.jpg'
-  },
-
-  {
-    imageURL: 'https://content.instructables.com/ORIG/FWA/ZIM7/I36LFL13/FWAZIM7I36LFL13.jpg?auto=webp&frame=1&width=320&md=c1aa5c4d5f71b7ca89845606d8e6706f'
-  }
-];
-
 const dotsArray = [null, null, null, null, null];
-const length = carouselImages.length;
 
 class ImageSlides extends React.Component {
   render() {
+    const { carouselImages } = this.props;
     return (
       <div className="slides-container">
         <i className="fas fa-chevron-left" onClick={this.props.prevSlide}></i>
@@ -74,6 +52,8 @@ class AppCarousel extends React.Component {
   }
 
   nextSlide() {
+    const { carouselImages } = this.props;
+    const length = carouselImages.length;
     const { current } = this.state;
     this.setState({
       current: current === length - 1 ? 0 : current + 1
@@ -81,6 +61,8 @@ class AppCarousel extends React.Component {
   }
 
   prevSlide() {
+    const { carouselImages } = this.props;
+    const length = carouselImages.length;
     const { current } = this.state;
     this.setState({
       current: current === 0 ? length - 1 : current - 1
@@ -94,6 +76,8 @@ class AppCarousel extends React.Component {
   }
 
   moveForward() {
+    const { carouselImages } = this.props;
+    const length = carouselImages.length;
     const { current } = this.state;
     this.setState({
       current: current === length - 1 ? 0 : current + 1
@@ -111,7 +95,7 @@ class AppCarousel extends React.Component {
   render() {
     return (
       <div className="carousel-container">
-        <ImageSlides current={this.state.current} nextSlide={this.nextSlide} prevSlide={this.prevSlide} />
+        <ImageSlides current={this.state.current} nextSlide={this.nextSlide} prevSlide={this.prevSlide} carouselImages={this.props.carouselImages} />
         <CarouselDots current={this.state.current} moveDotIndex={this.moveDotIndex} />
       </div>
     );
