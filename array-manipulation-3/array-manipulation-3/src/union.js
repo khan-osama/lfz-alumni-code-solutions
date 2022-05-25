@@ -1,4 +1,5 @@
 /* exported union */
+<<<<<<< HEAD
 function union(first, second) {
   const unionArr = first.concat(second);
   const uniqueArr = [];
@@ -10,3 +11,5 @@ function union(first, second) {
   }
   return uniqueArr;
 }
+=======
+>>>>>>> 502235d963fecda82f27ac84e30264ccbf710388
