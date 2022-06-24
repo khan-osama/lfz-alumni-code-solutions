@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Stopwatch from './stopwatch'
+import StopWatch from './stopwatch'
 
 
-const element = <Stopwatch />
+const element = <StopWatch />
 
 
 ReactDOM.render(
