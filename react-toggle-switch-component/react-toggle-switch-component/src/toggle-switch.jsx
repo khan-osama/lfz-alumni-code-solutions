@@ -32,7 +32,7 @@ function ToggleSwitch() {
   const [isToggled, setToggle] = useState(false)
 
   function handleClick() {
-    setToggle(!isToggled)
+    setToggle(prevState => !prevState)
   }
 
   return (
